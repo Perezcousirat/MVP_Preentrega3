@@ -1,5 +1,43 @@
-{% extends 'home/base.html' %}
+{% extends 'home/base.html' %} {% load static %} {% block content %}
 
-{% block contenido %}
-        <h2>Menu Principal</h2>
-{% endblock contenido %}
+<!-- Heading Row-->
+<div class="row gx-4 gx-lg-5 align-items-center my-5">
+  <div class="col-lg-7">
+    <img
+      class="img-fluid rounded mb-4 mb-lg-0"
+      src="{% static 'home/assets/image-extra-1.jpg' %}"
+      alt="Imagen de inicio"
+    />
+  </div>
+  <div class="col-lg-5">
+    <h1 class="font-weight-light">Cobre Vitro</h1>
+    <p>
+      ¡Bienvenido!
+      
+    </p>
+    <button
+      type="button"
+      class="btn btn-dark"
+    >
+      <a
+        href="{% url 'service:index' %}"
+        style="text-decoration: none; color: #fff"
+        >Mira los servicios!</a
+      >
+    </button>
+  </div>
+</div>
+
+<div class="card text-white bg-secondary my-5 py-4 text-center">
+    <a href="{% url 'product:index' %}" style="text-decoration: none; ">
+        <div class="card-body">
+          <p class="text-white m-0" style="font-size: 2rem;">
+            Presiona aqui para ver todos los productos!
+          </p>
+        </div>
+    </a>
+</div>
+
+
+
+{% endblock content %}

@@ -1,7 +1,10 @@
 from django.urls import path
+from django.contrib import admin
 from . import views
 urlpatterns = [
     path("", views.index, name="index"),
-    path("crear-autor/", views.crear_autor, name="crear-autor"), 
-    path("crear-post/", views.crear_autor, name="crear-post"), 
+    path("admin/", admin.site.urls), 
+    path
+    
+    
 ]

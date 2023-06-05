@@ -9,5 +9,8 @@ class AutorForm(forms.ModelForm):
         
 class PostForm(forms.ModelForm):
     class Meta:
-        model = models.Post
+        model = models.
         fields = "__all__"
+        
+        
+        

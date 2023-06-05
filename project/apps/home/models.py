@@ -1,16 +1,14 @@
 from django.db import models
 
-class Post(models.Model):
-    titulo = models.CharField(max_length=100)
-    contenido = models.TextField()
-    
-    def __str__(self):
-        return self.titulo
-    
-class Autor(models.Model):
+
+class Familiar(models.Model):
     nombre = models.CharField(max_length=100)
-    edad = models.IntegerField()
-    
+    fecha_nacimiento = models.DateField()
+
     def __str__(self):
         return self.nombre
-    
+      
+
+
+
+
